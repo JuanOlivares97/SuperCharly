@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperCharly</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="bar">
+            <a href="#">Despacho</a>
+            <a href="#">Despacho</a>
+            <a href="#">Despacho</a>
+        </div>
+        <div class="mobile">
+            <div class="header">
+                <div class="logo">
+                    SuperCharly.cl
+                </div>
+                <div class="more">
+                    <button id="bMore"><span class="material-icons">
+                            menu
+                        </span></button>
+                </div>
+            </div>
+            <div id="links" class="links collapsed">
+                <div class="search"><input id="busqueda" type="text" placeholder="¿Qué estas buscando?">
+                <label for="busqueda"><span class="material-icons">
+                    search
+                    </span></label></div>
+                <a href="#">Menú movil</a>
+                <a href="#">Menú movil</a>
+                <a href="#">Menú movil</a>
+                <a href="#">Menú movil</a>
+                <a href="#">Menú movil</a>
+            </div>
+        </div>
+        <div class="desktop">
+            <div class="logo">SuperCharly.cl</div>
+            <div class="primary">
+                <input id="busqueda" type="text" placeholder="¿Qué estas buscando?">
+                <label for="busqueda"><span class="material-icons">
+                    search
+                    </span></label>
+            </div>
+            <div class="secondary full">
+                <a href="#"><span class="material-icons">
+                    login
+                    </span></a>
+                <a href="#"><span class="material-icons">
+                    shopping_bag
+                    </span></a>
+            </div>
+            
+        </div>
+        <div class="categorias">
+            <div>Supermercado</div>
+            <div>Lacteos</div>
+            <div>Despensa</div>
+            <div>Frutas y Verduras</div>
+            <div>Limpieza</div>
+            <div>Carniceria</div>
+        </div>
+    </nav>
+    <section>
+    <div class="slide">
+    <img src="entrada.jpg" alt="" >
+    </div>
+    </section>
+
+
+
+
+
+
+    <script>
+        const bMore = document.querySelector("#bMore");
+        const links = document.querySelector('#links');
+        bMore.addEventListener("click", (e) => {
+            links.classList.toggle('collapsed');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+
+
+.collapsed {
+    display: none;
+}
+
+nav {
+    background-color: #2175FF;
+    color: black;
+    width: 100%;
+}
+
+nav .mobile {
+    display: none;
+}
+
+nav .mobile .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+
+}
+
+nav .mobile .header .more button {
+    border: none;
+    background-color: #2175FF;
+    color: black;
+    padding: 15px;
+    cursor: pointer;
+}
+
+nav .logo {
+    min-width: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: block;
+}
+
+nav a:hover {
+    color: black;
+    border-color: #f81559;
+    border-style: solid;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+
+nav .desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .desktop .primary,
+nav .desktop .secondary {
+    display: flex;
+    align-items: center;
+}
+nav .desktop .primary input{
+    border: none;
+    height: 20px;
+    width: 400px;  
+}
+nav .desktop .primary label{
+    cursor: pointer;
+    padding-left:10px;
+}
+nav .desktop .primary input:hover{
+    border: #f81559;
+    border-style:groove;
+}
+nav .desktop .secondary.mini {
+    display: none;
+}
+section .slide{
+    margin-top: 10px;
+}section .slide {
+    display: flex;
+    justify-content: center;
+    
+}
+
+section .slide img {
+    -webkit-box-shadow: 0px 10px 46px 10px rgba(37, 151, 244, 0.4);
+    -moz-box-shadow: 0px 10px 46px 10px rgba(37, 151, 244, 0.4);
+    box-shadow: 0px 10px 46px 10px rgba(37, 151, 244, 0.4);
+}
+
+
+section .slide img {
+    width: 375px;
+    height: auto;
+}
+nav .bar{
+    display: none;
+}
+nav .categorias{
+    display: none;
+}
+
+
+
+@media screen and (min-width:480px) and (max-width:800px){
+
+    section .slide img {
+        width: 960px;
+        height: auto;
+    }
+
+    nav .logo {
+        max-width: 100px;
+    }
+
+    nav .secondary.full {
+        display: none;
+    }
+
+    nav .secondary.mini {
+        display: block !important;
+    }
+
+    nav .secondary.mini .submenu {
+        background-color: #2175FF;
+        position: absolute;
+        display: none;
+        width: 150px;
+        right: 0;
+    }
+
+    nav .secondary.mini:hover .submenu {
+        display: block;
+    }
+
+    
+}
+
+@media screen and (min-width:320px) and (max-width:480px){
+    nav .desktop {
+        display: none;
+    }
+
+    nav .mobile {
+        display: block;
+        
+    }
+    nav .mobile .links{
+
+        text-align: center;
+    }    
+    nav .mobile .links .search{
+        justify-content: center;
+        }
+    }
+    
+
+
+
+
+
+
+
+@media screen and (min-width:800px) and (max-width:1980px){
+    nav .bar {
+        width: auto;
+        display: flex;
+        background-color: #f81559;
+        height: 30px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    nav .bar a {
+        display: block;
+        font-size: 15px;
+    }
+
+    nav .bar a:hover {
+        color: white;
+        border: none;
+    }
+
+    section .slide img {
+        width: 90%;
+        height: auto;
+    }
+    nav .categorias{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+        background-color: #0f6afc;
+    }
+    
+}
